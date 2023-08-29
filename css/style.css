@@ -1,0 +1,14 @@
+.BOX{
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    justify-content: center;
+    background: #004466;
+}
+.BOX a{
+    display: block;
+    background: #00ffa2;
+    text-decoration: none;
+    color: #004466;
+    font-size: 36px;
+}
