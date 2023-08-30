@@ -20,7 +20,9 @@
                     console.log(response);
                     if (response.status!='connected')
                     {
-                        doAuthenticateApp();
+                        FB.login(loginStatusHandler, {
+                        scope: 'read_stream,publish_stream'
+                        });
                         alert('請登入FB並授權應用程式使用');
                     }
                 });
