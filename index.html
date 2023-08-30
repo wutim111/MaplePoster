@@ -16,7 +16,12 @@
                 version          : 'v17.0'
                 });
             FB.getLoginStatus(function(response) {
-                console.log(response)
+                
+                    if (response.status!='connected')
+                    {
+                        doAuthenticateApp();
+                        alert('請登入FB並授權應用程式使用')
+                    }
                 });
         };
         
